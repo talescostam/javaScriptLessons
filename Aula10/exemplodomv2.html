@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, estou usando seletores</h1>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Go</li>
+    </ul>
+    <div id="conteudo" name="divConteudo" class="mensagem">
+
+    </div>
+
+    <div name="divConteudo" class="mensagem">
+
+    </div>
+
+    <div class="mensagem">
+
+    </div>
+
+    <span name="" class="novo">
+  fffffffffffff
+    </span>
+    
+</body>
+<script>
+
+    elemento0 = document.getElementsByTagName("li")[0];
+    elemento0.style.color = "blue"
+
+    elemento1 = document.getElementsByTagName("li")[1];
+    elemento1.style.background = "red"
+
+    elemento2 = document.getElementsByTagName("li")[2];
+    elemento2.innerText = "Spring"
+    
+    elementoDiv = document.getElementById("conteudo");
+    elementoDiv.innerHTML = "<p>Estou colocando um texto na div</p>"
+
+    elementoNome = document.getElementsByName("divConteudo")[1];
+    elementoNome.style.color = "blue"
+    elementoNome.innerText = "Estou inserindo um texto"
+
+    elementoClasse = document.getElementsByClassName("mensagem")[2];
+    elementoClasse.innerHTML = "<b>texto que eu quiser</b>"
+
+    elementoSpan = document.querySelector("span.novo");
+    elementoSpan.style.background = "yellow"
+
+    elementoSelector = document.querySelectorAll(".mensagem")[2];
+    elementoSelector.innerHTML = "<p> adicionando paragrafo </p>"
+
+</script>
+</html>

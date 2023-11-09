@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // window.alert("Mensagem de alerta")
+        // window.confirm("Você quer aprender JavaScript?")
+    // var nome = window.prompt("qual o seu nome?")
+    // var sobrenome = window.prompt("qual o seu sobrenome?")
+    // window.alert("O seu nome é " + nome.toUpperCase() + " " + sobrenome.toUpperCase())
+    // var num1 = Number.parseInt(prompt("Digite o primeiro número:"))
+    // var num2 = Number.parseInt(prompt("Digite o segundo número:"))
+    // soma = num1 + num2
+    // window.alert( num1 + " + " + num2 + " = " + soma + ".")
+
+    function confirma(){
+        let retorno = confirm("Você tem certeza que deseja excluir nada mesmo?")
+        if(retorno){
+            alert("Nada foi excluído com sucesso.")
+        } else{
+            alert("Nada foi cancelado.")
+        } 
+    }
+
+    function adicionar(){
+        let retorno = confirm("Você tem certeza que deseja adicionar nada mesmo?")
+        if(retorno){
+            alert("Nada foi adicionado com sucesso.")
+        } else{
+            alert("Nada não foi adicionado.")
+        } 
+    }
+    
+    </script>
+    <h1>Chamada para janela de confirmação</h1>
+    <button onclick="confirma()">Apagar</button>
+    <button onclick="adicionar()">Adicionar</button>
+</body>
+</html>

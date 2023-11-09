@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="estilo">
+        div com class
+    </div>
+    <div class="estilo">
+        div com class
+    </div>
+    <p class="estilo">
+        elemento p com class
+    </div>
+
+    <script>
+        const listaElemento = document.querySelectorAll(".estilo");
+        for(i = 0; i < listaElemento.length; i++){
+            listaElemento[i].style.backgroundColor = "blue"
+            listaElemento[i].style.color = "white"
+            listaElemento[i].innerText = listaElemento[i].innerText.toUpperCase();
+        }
+    </script>
+
+
+</body>
+</html>
